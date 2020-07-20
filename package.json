@@ -4,7 +4,11 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nuxt --port 3000 --config-file dev/nuxt.config.js",
+    "dev:build": "nuxt build --config-file dev/nuxt.config.js",
+    "dev:build:analyze": "nuxt build --analyze --config-file dev/nuxt.config.js",
+    "dev:start": "nuxt start --config-file dev/nuxt.config.js",
+    "eslint": "eslint --fix 'src/**/*.{js,ts,tsx}'"
   },
   "repository": {
     "type": "git",
@@ -24,5 +28,25 @@
     "prettier": "^2.0.5",
     "tsc-watch": "^4.2.9",
     "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "@sedona-cms/core": "^1.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx,vue,md}": [
+      "prettier --write"
+    ],
+    "src/**/*.{js,ts,tsx}": [
+      "prettier --write",
+      "npm run eslint"
+    ],
+    "dev/**/*.{js,vue,json}": [
+      "prettier --write"
+    ]
   }
 }
