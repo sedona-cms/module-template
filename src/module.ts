@@ -15,7 +15,7 @@ const templateModule: Module<ModuleConfig> = async function (moduleOptions) {
         src: path.resolve(__dirname, 'templates/plugin.js'),
         fileName: path.join('admin/blocks', 'plugin.js'),
         mode: 'client',
-      })
+    })
 }
 
 export default templateModule
