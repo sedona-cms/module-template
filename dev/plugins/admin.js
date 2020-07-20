@@ -1,3 +1,3 @@
-export default function(context) {
-    
+export default async function(context) {
+    await context.$adminLoader.load()
 }

@@ -1,21 +1,22 @@
 {
   "name": "@sedona-cms/module-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sedona CMS Module Template",
   "main": "lib/index.js",
   "scripts": {
     "dev": "nuxt --port 3000 --config-file dev/nuxt.config.js",
     "dev:build": "nuxt build --config-file dev/nuxt.config.js",
     "dev:build:analyze": "nuxt build --analyze --config-file dev/nuxt.config.js",
     "dev:start": "nuxt start --config-file dev/nuxt.config.js",
-    "eslint": "eslint --fix 'src/**/*.{js,ts,tsx}'"
+    "eslint": "eslint --fix 'src/**/*.{js,ts,tsx}'",
+    "watch": "make watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sedona-cms/module-template.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ivan Kalinichenko <kalinichenko@constlab.ru>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sedona-cms/module-template/issues"
@@ -25,6 +26,8 @@
     "@nuxt/types": "^2.13.3",
     "@sedona-cms/eslint-config": "^1.1.4",
     "@types/node": "^14.0.23",
+    "npm-self-link": "^1.1.7",
+    "nuxt": "^2.13.3",
     "prettier": "^2.0.5",
     "tsc-watch": "^4.2.9",
     "typescript": "^3.9.7"

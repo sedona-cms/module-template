@@ -1,1 +1,1 @@
-# module-template
+# Sedona CMS Module Template
