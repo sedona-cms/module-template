@@ -1,0 +1,28 @@
+{
+  "name": "@sedona-cms/module-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sedona-cms/module-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sedona-cms/module-template/issues"
+  },
+  "homepage": "https://github.com/sedona-cms/module-template#readme",
+  "devDependencies": {
+    "@nuxt/types": "^2.13.3",
+    "@sedona-cms/eslint-config": "^1.1.4",
+    "@types/node": "^14.0.23",
+    "prettier": "^2.0.5",
+    "tsc-watch": "^4.2.9",
+    "typescript": "^3.9.7"
+  }
+}
